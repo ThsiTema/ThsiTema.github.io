@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artem Kotenko — Flutter Developer</title>
+  <meta name="description" content="Flutter developer and mobile software engineer building local-first, API-integrated, and server-backed applications.">
+  <meta name="keywords" content="Artem Kotenko, Flutter Developer, Dart, Mobile Software Engineer, GetX, BLoC, Remote Flutter Developer">
+  <meta property="og:title" content="Artem Kotenko — Flutter Developer">
+  <meta property="og:description" content="Mobile products built to work beyond the demo. Public source, architecture decisions, and production delivery.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Artem Kotenko, home">
+        <span class="brand-mark">AK</span>
+        <span class="brand-name">Artem Kotenko</span>
+      </a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#experience">Experience</a>
+      </div>
+      <a class="nav-contact" href="mailto:kotm9535@gmail.com">Let's talk</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy">
+        <div class="availability"><span class="status-dot"></span>Baku · Remote worldwide</div>
+        <p class="eyebrow">Flutter Developer · Mobile Software Engineer</p>
+        <h1>Mobile products built to work <em>beyond the demo.</em></h1>
+        <p class="hero-lead">I design, build, debug, and release Flutter applications across local-first, API-integrated, and server-backed products—with architecture that stays understandable after launch.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View engineering work <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="assets/resume/Artem_Kotenko_Flutter_Developer_Resume.pdf" target="_blank">Resume · PDF</a>
+        </div>
+        <div class="social-row" aria-label="Professional profiles">
+          <a href="https://github.com/ThsiTema" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/thistema/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="mailto:kotm9535@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Selected Flutter product screens">
+        <div class="hero-grid"></div>
+        <div class="code-label code-label-top"><span>STATE</span><strong>predictable</strong></div>
+        <div class="hero-phone hero-phone-back"><img src="assets/archive/body-scan.jpg" alt="Body Scan Flutter application dashboard"></div>
+        <div class="hero-phone hero-phone-front"><img src="assets/work/hingebench-home.webp" alt="HingeBench local state and saved jobs screen"></div>
+        <div class="code-label code-label-bottom"><span>DELIVERY</span><strong>release-ready</strong></div>
+      </div>
+    </section>
+
+    <section class="proof-band" aria-label="Experience highlights">
+      <div class="proof-grid shell">
+        <div><strong>120+</strong><span>functional Flutter applications</span></div>
+        <div><strong>3+ yrs</strong><span>focused Flutter development</span></div>
+        <div><strong>2+ yrs</strong><span>commercial mobile delivery</span></div>
+        <div><strong>GetX + BLoC</strong><span>architecture matched to product scope</span></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">Selected engineering work</p><h2>Source you can inspect. Decisions I can explain.</h2></div>
+        <p>Two public, production-style Flutter projects show different architecture choices, domain problems, and persistence models.</p>
+      </div>
+
+      <article class="case case-hingebench">
+        <div class="case-copy">
+          <div class="case-number">01 · Public repository</div>
+          <h3>HingeBench</h3>
+          <p class="case-intro">Offline-first workshop utility that turns cabinet measurements and hardware profiles into repeatable drilling marks, warnings, and grouped setup steps.</p>
+          <ul class="decision-list">
+            <li><span>Domain logic</span>Deterministic geometry isolated from UI and covered by unit tests.</li>
+            <li><span>Data integrity</span>Saved jobs keep snapshots even when library records change.</li>
+            <li><span>State design</span>GetX for a compact, closely connected local workflow.</li>
+          </ul>
+          <div class="tech-list"><span>Flutter</span><span>GetX</span><span>GetStorage</span><span>Unit tests</span><span>GitHub Actions</span></div>
+          <a class="arrow-link" href="https://github.com/ThsiTema/hingebench" target="_blank" rel="noreferrer"><span>Inspect source and tests</span><b aria-hidden="true">↗</b></a>
+        </div>
+        <div class="hinge-visual">
+          <div class="screen screen-main"><img src="assets/work/hingebench-bench.webp" alt="HingeBench door bench screen" loading="lazy"></div>
+          <div class="screen screen-secondary"><img src="assets/work/hingebench-correction.webp" alt="HingeBench first-fit correction screen" loading="lazy"></div>
+          <div class="test-badge"><span class="test-check">✓</span><div><strong>Behavior tested</strong><small>geometry · warnings · persistence</small></div></div>
+        </div>
+      </article>
+
+      <article class="case case-dugout">
+        <div class="dugout-visual">
+          <img class="dugout-bg" src="assets/work/dugout-board.webp" alt="Dugout Delta tactical baseball field artwork" loading="lazy">
+          <div class="dugout-overlay"></div>
+          <div class="dugout-icon"><img src="assets/work/dugout-icon.webp" alt="Dugout Delta app icon" loading="lazy"></div>
+          <div class="architecture-card">
+            <p>Single source of truth</p>
+            <div class="architecture-flow"><span>UI</span><i>→</i><span>Cubit</span><i>→</i><span>Repository</span></div>
+            <small>immutable state · explicit transitions</small>
+          </div>
+        </div>
+        <div class="case-copy">
+          <div class="case-number">02 · Public repository</div>
+          <h3>Dugout Delta</h3>
+          <p class="case-intro">Local-first coaching app for planning defensive situations, capturing practice rounds, and converting execution gaps into the next repetitions.</p>
+          <ul class="decision-list">
+            <li><span>Architecture</span>BLoC/Cubit with immutable feature states and explicit transitions.</li>
+            <li><span>Consistency</span>Repository is the source of truth; dependent screens rebuild after mutations.</li>
+            <li><span>Recovery</span>Drafts, active rounds, and user-owned data persist locally.</li>
+          </ul>
+          <div class="tech-list"><span>Flutter</span><span>BLoC / Cubit</span><span>Repository</span><span>GetStorage</span><span>Localization</span></div>
+          <a class="arrow-link" href="https://github.com/ThsiTema/dugout-delta" target="_blank" rel="noreferrer"><span>Inspect architecture and source</span><b aria-hidden="true">↗</b></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section approach-section" id="approach">
+      <div class="shell">
+        <div class="section-heading compact">
+          <div><p class="eyebrow">How I deliver</p><h2>AI-assisted. Engineering-owned.</h2></div>
+          <p>AI accelerates implementation and repetitive production work. Product framing, architecture, review, debugging, validation, and release responsibility stay with me.</p>
+        </div>
+        <div class="approach-grid">
+          <article class="approach-main">
+            <div class="terminal-bar"><span></span><span></span><span></span><code>delivery_system.md</code></div>
+            <div class="terminal-body">
+              <p><b>01</b>Frame the product and data model</p><p><b>02</b>Choose architecture for the actual scope</p><p><b>03</b>Build reusable flows and visual systems</p><p><b>04</b>Integrate local data, APIs, or server logic</p><p><b>05</b>Debug, localize, QA, and prepare release</p>
+            </div>
+          </article>
+          <article class="metric-card">
+            <span class="metric-kicker">Delivery outcome</span><strong>Up to 10×</strong><h3>lower estimated cost per market-ready variant</h3>
+            <p>Compared with a separate developer-and-designer baseline, using reusable architecture, AI-assisted assets, and controlled multi-market adaptation.</p>
+            <div class="metric-footnote">Estimate based on the current production model—not a universal benchmark.</div>
+          </article>
+          <article class="capability-card">
+            <p class="card-label">Working range</p>
+            <div class="capability-list"><span>Local-first products</span><span>REST API integration</span><span>Server-backed flows</span><span>Architecture &amp; state</span><span>Persistence &amp; recovery</span><span>Testing &amp; CI</span><span>Android &amp; iOS</span><span>Release preparation</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell archive-section" id="archive">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">Selected product archive</p><h2>Range without the noise.</h2></div>
+        <p>A small cross-section from a broader body of 120+ functional applications across utility, health, social, creative, and game products.</p>
+      </div>
+      <div class="archive-grid">
+        <article class="archive-card"><div class="archive-image"><img src="assets/archive/chainforge.png" alt="Chainforge Arena Flutter application screen" loading="lazy"></div><div class="archive-copy"><strong>Chainforge Arena</strong><span>State-heavy game loop</span></div></article>
+        <article class="archive-card"><div class="archive-image"><img src="assets/archive/body-scan.jpg" alt="Body Scan Flutter application screen" loading="lazy"></div><div class="archive-copy"><strong>Body Scan</strong><span>Health data dashboard</span></div></article>
+        <article class="archive-card"><div class="archive-image"><img src="assets/archive/pulsedrop.png" alt="Pulsedrop Arena Flutter application screen" loading="lazy"></div><div class="archive-copy"><strong>Pulsedrop Arena</strong><span>Interactive game system</span></div></article>
+        <article class="archive-card"><div class="archive-image"><img src="assets/archive/linkora.jpg" alt="Linkora Flutter application screen" loading="lazy"></div><div class="archive-copy"><strong>Linkora</strong><span>Relationship planning</span></div></article>
+        <article class="archive-card"><div class="archive-image"><img src="assets/archive/virexo.jpg" alt="Virexo Draw Flutter application screen" loading="lazy"></div><div class="archive-copy"><strong>Virexo Draw</strong><span>Creative canvas workflow</span></div></article>
+        <article class="archive-card"><div class="archive-image"><img src="assets/archive/drawix.jpg" alt="Drawix Flutter application screen" loading="lazy"></div><div class="archive-copy"><strong>Drawix</strong><span>Studio and library flows</span></div></article>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="shell experience-layout">
+        <div class="experience-intro">
+          <p class="eyebrow">Experience</p><h2>Five years across software. Three focused on Flutter.</h2>
+          <p>The stack changed; the job stayed the same: understand the system, make the right trade-offs, and own the result.</p>
+          <a class="arrow-link" href="assets/resume/Artem_Kotenko_Flutter_Developer_Resume.pdf" target="_blank"><span>Open full resume</span><b aria-hidden="true">↗</b></a>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-dot"></div><time>Jun 2024 — Present</time><h3>Flutter Developer</h3><h4>Confidential Mobile App Publisher · Remote</h4><p>Owns mobile products from architecture and implementation through debugging, localization, QA, and release preparation.</p></article>
+          <article class="timeline-item"><div class="timeline-dot"></div><time>Jun 2023 — Jun 2024</time><h3>Independent Flutter Developer</h3><h4>Personal product development</h4><p>Built complete local-first and API-backed applications while developing reusable mobile architecture and delivery practices.</p></article>
+          <article class="timeline-item"><div class="timeline-dot"></div><time>Jun 2021 — Jun 2023</time><h3>Software Developer</h3><h4>C# and React projects</h4><p>Worked across application logic, web interfaces, data flows, and integrations before specializing in Flutter.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact shell">
+      <div class="contact-card">
+        <p class="eyebrow">Open to remote Flutter roles</p><h2>Need someone who can own more than a screen?</h2>
+        <p>I'm available for remote product teams where architecture, delivery speed, and responsibility for the shipped result matter.</p>
+        <div class="contact-actions"><a class="button button-primary" href="mailto:kotm9535@gmail.com">kotm9535@gmail.com</a><a class="button button-secondary" href="https://www.linkedin.com/in/thistema/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell"><span>© <span id="year">2026</span> Artem Kotenko</span><span>Flutter Developer · Baku · Remote worldwide</span></footer>
+</body>
+</html>
